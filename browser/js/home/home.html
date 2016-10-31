@@ -46,7 +46,7 @@
 
          <div class=' container-fluid mostRecentSingle'>
             <div class='row'>
-            <h3>SINGLES</h3>
+            <h3 id="singlesTitle">SINGLES</h3>
                 <ul id='singlesList'>
                     <li ng-repeat="single in singles" class="{{single.class}}" ng-controller="SinglePlayerCtrl" ng-init='idx= $index'>
                         <a ng-click="toggle(single.source, $index)" ng-show="!curSongPlaying"> <i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
@@ -172,7 +172,7 @@
        <!-- News Letter Section -->
     	<div class='banner'>
     		<div class=' newsLetterSignUp'> 
-        <h3>Suscribete</h3>
+        <h3 id="signupTitle">Suscribete</h3>
           <form class="form-inline">
             <input type="email" placeholder='example@gmail.com'>
             <button type="submit" class="btn  btn-default "> GO</button>
