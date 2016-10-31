@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/" />
+    <title>Ob & Dave Music</title>
+    <link rel="stylesheet" type="text/css" href="/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="/lodash/index.js"></script>
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-animate/angular-animate.js"></script>
+    <script src="/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/angular-easyfb/src/angular-easyfb.js"></script>
+    <script src="/angular-ui-bootstrap/ui-bootstrap.js"></script>
+    <script src="/angular-ui-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="/socket.io-client/socket.io.js"></script>
+    <script src="/main.js"></script>
+
+</head>
+<body ng-app="FullstackGeneratedApp" class='myApp'>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'your-app-id',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="fb-root"></div>
+
+    <!-- <navbar ></navbar> -->
+    <div id="main" ui-view autoscroll class="ng-cloak"></div>
+    <!-- Footer Section -->
+    <!-- <footer></footer> -->
+  </div>  
+  
+
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+</html>

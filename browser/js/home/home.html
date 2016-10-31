@@ -1,0 +1,186 @@
+<div class='hello'   ng-show='transitioned'>
+<navbar ></navbar >
+<section  id="home" class='homebruh'>
+   <!--  <img style="heigth: 100%; width: 100%; " ng-src='js/home/carouselPics/carousel1.jpg' style="margin:auto;" > -->
+   <img style="height: 100%; width: 100%; " ng-src='testMainPic.jpg' style="margin:auto;" >
+
+  <!-- Carousel Markup -->
+      <!-- <div >
+        <div  uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+          <div style="max-height: 800px" uib-slide ng-repeat="slide in slides" index="slide.id">
+            <img style="heigth: 100%; " ng-src='js/home/carouselPics/carousel{{slide}}.jpg' style="margin:auto;">
+            <div class="carousel-caption">
+              <h4>Slide {{slide.id}}</h4>
+              <p>{{slide.text}}</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+          
+          <div class='container-fluid ' style="border: 5px solid gray">
+              <div class='row'>
+             <img src='obDaveBanner.jpg' class='img-responsive' >
+             <!-- <img src='obDaveBanner2.jpg' class='img-responsive'/> -->
+               </div>
+          </div>
+          
+       
+        <div class='banner bioBanner' >
+            <div class='davesBox' ng-mouseover="daveSpotLight()" ng-mouseleave="daveSpotLight()"  ui-sref="dave">
+                
+            </div>
+
+            <div class='obsBox' ng-mouseover="obSpotLight()" ng-mouseleave="obSpotLight()"  ui-sref="ob">
+                
+            </div>
+        </div>
+
+
+
+        <!-- Tour dates Section -->
+        <div class='container tubeVid'>
+            <iframe src="https://www.youtube.com/embed/2ASw-Gwv4Rg" width="842" height="474" frameborder="0" ></iframe>
+        </div>
+
+
+         <div class=' container-fluid mostRecentSingle'>
+            <div class='row'>
+            <h3>SINGLES</h3>
+                <ul id='singlesList'>
+                    <li ng-repeat="single in singles" class="{{single.class}}" ng-controller="SinglePlayerCtrl" ng-init='idx= $index'>
+                        <a ng-click="toggle(single.source, $index)" ng-show="!curSongPlaying"> <i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+                        <a ng-click="toggle(single.source, $index)" ng-show="curSongPlaying">  <i class="fa fa-pause-circle-o" aria-hidden="true"></i> </a>
+                    </li>
+                </ul>
+             <!--    <img class='mLine1' src='musicLine.jpg'/>
+                <img class='mLine2' src='musicLine.jpg'/> -->
+                <a ng-click='toggleLogos()' class='musicArrow'> <img src='musicArrow.jpg'/></a>
+                <div id="xsMusicArrowGroup">
+                  <a class="glyphicon glyphicon-triangle-bottom" ng-click='toggleLogos()'></a>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Music purchase links -->
+
+        <div class='banner' >
+            <div class=' musicLinks' ng-show='showLogos' >
+                <a class='appleLogo' href='https://geo.itunes.apple.com/us/artist/o.b-dave/id1151373010?mt=1&app=music' target='_blank'><apple-logo></apple-logo></a>
+                <a class='spotifyLogo' href='https://open.spotify.com/artist/5buhgK1Ppj599dbHjG1uAT' target='_blank'> <img src='logos/spotifyLogo.jpg'/> </a>
+                <a class='sCloudLogo' href='https://soundcloud.com/obanddave' target='_blank'> <img src='logos/soundCloudLogo.jpg'/> </a>
+            </div>
+        </div>
+
+
+    <!-- Table section -->
+
+        <div class='test '>
+            <div class="container">
+                <div class='col-md-12'>
+                    <h1>Eventos 2016</h1>
+                </div>
+                <div class='clearfix'></div>
+
+                <ul class='tourList pre-scrollable'>
+                    <li>
+                        <div class='row tourRow'>
+                            <div class='hidden-xs col-md-1 pic'>
+                                <img src='dimeMaSingle.jpg'/>
+                            </div>
+                            <div class='col-md-1 col-xs-3 dateCell'>
+                                <h1>10</h1>
+                                <h2>OCT 2016</h2>
+                            </div>
+                             <div class='col-md-6 col-xs-9 addressCell'> 
+                                <h2>Bowery Ballroom</h2>
+                                <h3> address here</h3>
+                             </div>
+                             <div class='col-md-2 hidden-xs btnCell'>
+                                 <a class='btn btn-info  btn-block'> Info</a>
+                             </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class='row tourRow'>
+                            <div class='hidden-xs col-md-1 pic'>
+                                <img src='dimeMaSingle.jpg'/>
+                            </div>
+                             <div class='col-md-1 col-xs-3 dateCell'>
+                                 <h1>14</h1>
+                                 <h2>OCT 2016</h2>
+                             </div>
+                            <div class='col-md-6 col-xs-9 addressCell'> 
+                                 <h2>S.O.B</h2>
+                                <h3> address here</h3>
+                            </div>
+                            <div class='col-md-2 hidden-xs btnCell'>
+                                <a class='btn btn-info  btn-block'> Info</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='row tourRow'>
+                            <div class='hidden-xs col-md-1 pic'>
+                                <img src='dimeMaSingle.jpg'/>
+                            </div>
+                            <div class='col-md-1 col-xs-3 dateCell'>
+                                <h1>23</h1>
+                                <h2>OCT 2016</h2>
+                            </div>
+                            <div class='col-md-6 col-xs-9 addressCell'> 
+                                <h2>Hammerstein Ballroom</h2>
+                                <h3> address here</h3>
+                            </div>
+                            <div class='col-md-2 hidden-xs btnCell'>
+                                <a class='btn btn-info btn-block'> Info</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Social Embed Section -->
+        <div class='socialEmbeds'>
+        <a class="twitter-timeline" data-width="300" data-height="300" href="https://twitter.com/obanddavemusic">Tweets by obanddavemusic</a> 
+
+        <iframe class="obDaveIGGrid" src="//users.instush.com/bee-gallery-v2/?cols=3&rows=3&size=small&border=0&round=false&space=0&sl=true&bg=transparent&brd=true&na=false&pin=false&hc=b8000c&ltc=3f3f3f&lpc=ffffff&fc=ffffff&user_id=2108929940&username=ob_and_dave&sid=-1&susername=-1&tag=-1&stype=mine&t=999999uZuHKnxn9XHI_OYz4sGmj-TRKmGilDFIl8CH68RrtahT-445ZclzBStwgdc6Tk1LcIc45l_e1R4" allowtransparency="true" frameborder="0" scrolling="no"  style="display:inline;width:300px;height:300px;border:none;overflow:visible; margin-left: 50px;" ></iframe>
+
+        
+        <div class="fb-page"  data-href="https://www.facebook.com/obanddave#" data-tabs="timeline" data-width="300" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/obanddave#" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/obanddave#">OB and DAVE</a></blockquote></div>
+
+       <!--  <div id="fb-root"></div>
+         <script>
+          var loadFBFeed= function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1745809285664898";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+
+          loadFBFeed(document, 'script', 'facebook-jssdk');
+          FB.XFBML.parse();
+
+        </script> -->
+
+        </div>
+
+
+       <!-- News Letter Section -->
+    	<div class='banner'>
+    		<div class=' newsLetterSignUp'> 
+        <h3>Suscribete</h3>
+          <form class="form-inline">
+            <input type="email" placeholder='example@gmail.com'>
+            <button type="submit" class="btn  btn-default "> GO</button>
+          </form>
+        </div>
+    	</div>
+    
+</section>
+<footer ></footer >
+</div>
+<img class='land' src='landing{{random}}.jpg' ng-click='$parent.toggleTransition()' ng-if="!transitioned" />

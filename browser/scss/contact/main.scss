@@ -1,0 +1,78 @@
+#contact{
+	border-top: 5px solid gray;
+	border-bottom: 5px solid gray;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	.mainForm{
+		border-bottom: 5px solid black;
+		margin-top: 0;
+		height: 700px;
+		font-family: "Lato", sans-serif;
+		text-align: center;
+		h1{
+			font-size: 60px;
+			font-weight: 700;
+		}
+
+		form{
+			margin-top: 30px;
+			.form-group{
+				margin-bottom: 20px;
+
+				#nombreLabel, #apellidoLabel{
+					margin-right: 20px;
+				}
+
+
+				label{
+					font-size: 20px;
+				}
+				input{
+					margin-left: 18px;
+					border: 2px solid lightgray;
+				}
+
+				#correo{
+					margin-left: 61px;
+				}
+				#msg{
+					width: 262px;
+					height: 139px;
+					border: 2px solid lightgray;
+				}
+				button{
+					background-color: black;
+				}
+
+			}
+		}
+		.phoneMailInfo{
+		
+		}
+	}
+	
+	.bgimg1, .bgimg2 {
+	    opacity: 0.65;
+	    background-attachment: fixed;
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    
+	}
+
+	.bgimg1{
+		height: 500px;
+		background-image: url('grayBanner.jpg');
+	}
+
+	.bgimg2{
+		height: 500px;
+		background-image: url('grayBanner.jpg');
+	}
+	.testing{
+		width: 1000px;
+		height: 300px;
+		border: 4px solid black;
+	}
+
+
+}

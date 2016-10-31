@@ -1,0 +1,202 @@
+navbar {
+
+  display: block;
+  width: 100%;
+  box-shadow: 1px 1px 14px -3px black;
+  position: relative;
+  margin-bottom: 56px;
+
+
+  .navbar-inverse{
+    background-color: white;
+    border-bottom: 4px solid gray;
+    min-height: 40px;
+    height: 60px;
+  }
+
+
+
+  .container{
+    width: 91%;
+    max-width: 1340px;
+    padding-left:0px;
+    margin-left: 48px;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      margin-left:0;
+    }
+    ul{
+      margin-top: 6px;
+      margin-left: -4px;
+      a {
+        color: #4d4d4d;
+        font-size: 17px;
+        font-weight: lighter;
+        font-family:  "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+      }
+    }
+    .in{
+      width: 390px;
+      background-color: white;
+      font-weight: 200;
+      ul{
+        a{
+          font-weight: 200;
+          text-align: center;
+          border-bottom: 1px solid gray;
+        }
+      }
+      .socialContainer{
+        float: none;
+        margin: auto;
+        left: 0;
+      }
+    }
+    
+
+    .socialContainer {
+      margin-top: 10px; 
+      position: relative;
+      left: 60px;
+      float: right;
+      width: 185px;
+      height: 40px; 
+      font-size: 23px;
+      color: white;
+      @media screen and (min-width : 1824px) {
+        /* Fix this- why doesnt it work with right box offset property?  */
+        position: absolute;
+        left: 1690px;
+        
+      }
+
+      .circle {
+        float: left;
+        border-radius: 50%;
+        margin-left: 9px;
+        border: 2px solid black;
+        width: 34px;
+        height: 34px; 
+        /* width and height can be anything, as long as they're equal */
+        text-align: center;
+        background-color: black;
+        line-height: 31px;
+        font-size: 18px;
+        a:link, a:visited { 
+            color: white;
+            text-decoration: none;
+            cursor: auto;
+        }
+
+        a:link:active, a:visited:active { 
+            color: gold;
+        }
+        a:hover{
+          color: gold;
+        }
+        
+      }
+    }
+
+  }
+
+  fullstack-logo {
+    margin-bottom: 20px;
+    width: 80px;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      margin: auto auto;
+      img{
+        margin-top: 2px;
+        width: 80%;
+        margin-left: 35px;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    float: left;
+    border: none;
+    background-color: white;
+    margin-left: 14px;
+    margin-top: 6px;
+    padding: 5px;
+  .icon-bar{
+      background-color: gray !important;
+      height: 5px !important;
+      width: 33px;
+      border-radius: 10px;
+     + .icon-bar {
+          margin-top: 5px;
+      }
+    }
+  }
+
+  
+
+/* Used !important becuase of some specificity issue */
+  .nav > li > a {
+    cursor: pointer;
+    transition: color 0.2s;
+    &.active {
+      color: #f1bc41 !important;
+    }
+    &:hover {
+      background: none;
+      color: #f1bc41 !important;
+    }
+    &:focus {
+      background: none;
+      color: #4d4d4d;
+    }
+  }
+
+
+
+
+  .login-button {
+    float: right;
+    border: 1px solid black;
+    margin-top: 10px;
+    background: none;
+    outline: none !important;
+  }
+
+  .welcome {
+    float: right;
+    margin-top: 12px;
+    span {
+      color: black;
+      font-size: 16px;
+      margin-right: 5px;
+    }
+    a {
+      color: #f30046;
+      cursor: pointer;
+    }
+  }
+
+}
+
+/*  FOOTER */
+
+
+
+  milliondollar-logo{
+    position: absolute;
+    max-width: 80px;
+    right: 40px;
+    top: 0px;
+    padding-top: 7px;
+    img{
+    float: left;
+      width: 6%;
+      min-width: 80px;
+      min-height: 75.5px;
+    }
+    
+  }
+
+
+  .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+      background-color: white;
+      opacity: .5;
+  }

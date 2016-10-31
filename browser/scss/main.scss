@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background: white;
+  position: relative;
+  [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+  }
+}
+
+
+
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+#main {
+  padding-top: 0;
+  margin: 0 auto;
+}
+
+
+
+
+
+@import 'directives/main';
+@import 'home/main';
+@import 'about/main';
+@import 'tutorial/main';
+@import 'login/main';
+@import 'contact/main';
+@import 'landing/main';
+@import 'obBio/main';
