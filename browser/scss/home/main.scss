@@ -43,6 +43,8 @@
     .fb-page{
       margin-left: 50px;
     }
+
+    /*IPHONE 5-6S*/
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
       .obDaveIGGrid{
         margin-left: 0 !important;
@@ -54,14 +56,28 @@
       }
     }
 
+    /*IPHONE 5-6S LANDSCAPE*/
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: landscape) {
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+      #twitter-widget-0{
+        display: block !important;
+        margin: auto !important;
+      }
+      .obDaveIGGrid{
+        display: block !important;
+        margin: auto !important;
+        margin-top: 20px !important;
+      }
+      .fb-page{
+        display: block !important;
+        margin-top: 20px !important;
+      }
+    }
 
   }
     
-    
-
-
-
-
 
 /* OVERRIDING THE CAROUSEL SLIDER INDICATORS */
   .carousel-control.left{
@@ -77,6 +93,10 @@
   .carousel-indicators{
     display: none;
   }
+
+
+
+  /*MOST RECENT SINGLE BANNER*/
 
   .mostRecentSingle{
     background-image: url('something.jpg');
@@ -216,6 +236,8 @@
       opacity: 0.3;
     }
 
+
+
     /*IPHONE 5-6s*/
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
       height: 220px;
@@ -259,7 +281,6 @@
               background-size: 92px 92px;
             }
           }
-        
       }
 
       .musicArrow{
@@ -280,7 +301,55 @@
       }
       
     }
+    /* IPHONE 5-6s LANDSCAPE */
+     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
+     height: 270px;
+      #singlesTitle{
+        font-size: 40px;
+      }
+        ul{
+          li{
+            width: 130px;
+            height: 130px;
+            margin-right: 20px;
+            font-size: 56px;
+            a{
+              i{
+                margin-top: 36px;
+              }
+            }
+          }
+
+          .propSingle{
+            &:after{
+              min-width: 130px;
+              min-height: 130px;
+              background-size: 123px 123px;
+            }
+          }
+          .dimeSingle{
+            &:after{
+              min-width: 130px;
+              min-height: 130px;
+              background-size: 122px 122px;
+            }
+          }
+          .imaginaSingle{
+            &:after{
+              min-width: 130px;
+              min-height: 130px;
+              background-size: 122px 122px;
+            }
+          }
+        }
+
+     }
+
   }
+  /*END OF MOST RECENT SINGLE BANNER*/
+
+
+  /* MUSIC LINK BANNER */
   
   .musicLinks{
 
@@ -354,6 +423,31 @@
           }
         }
       }
+
+      /* IPHONE 5-6s LANDSCAPE*/
+      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
+        .appleLogo{
+          left: 268px;
+          svg{
+            width: 120px;
+          }
+        }
+        .spotifyLogo{
+          left: 180px;
+          bottom: 15px;
+          img{
+            width: 60px;
+            height: 60px;
+          }
+        }
+        .sCloudLogo{
+          right: 165px;
+          bottom: 16px;
+          img{
+            width: 80px;
+          }
+        }
+      }
   }
 
   .musicLinks.ng-hide-add, .musicLinks.ng-hide-remove {
@@ -364,6 +458,9 @@
     opacity: 0;
     height: 0;
   }
+
+/*END MOST RECENT SINGLE BANNER*/
+
 
 
     /*  Bio Banner Transitions */
@@ -382,8 +479,13 @@
       }
       @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         height: 113px;
-        background-size: contain;
+        background-size: contain;        
       }
+
+      @media only screen and (min-device-width : 320px) and (max-device-width: 480px) and (orientation : landscape){
+          background-size: cover;
+          height: 205px;
+        }
 
 
       .davesBox{
@@ -445,13 +547,16 @@
             right: 0;
           }
         }
-
+        @media only screen and (min-device-width : 320px) and (max-device-width: 480px) and (orientation : landscape){
+            width: 100%;
+            height: 300px;
+        }
     }
   
 
   
 
-    /* TABLE STYLES */
+    /* TOUR DATE TABLE STYLES */
     .test{
 
       background-color: transparent;
@@ -537,7 +642,7 @@
         }
       }
 
-      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      @media only screen and (min-device-width : 320px) and (max-device-width : 480px)  {
         padding-bottom: 30px;
         .tourList{
           width: 300px;
@@ -588,6 +693,20 @@
         }
       }
 
+      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
+      padding-bottom: 0;
+        h1{
+          font-size: 35px;
+          margin-bottom: 50px;
+        }
+        .tourList{
+          margin: auto;
+
+
+        }
+
+      }
+
 
     }
 
@@ -628,20 +747,19 @@
         background-image: none;
         height: 100px;
         background-size: cover;
+        text-align:center;
         #signupTitle{
           display: block;
         }
         h3{
           font-family: "Lato";
           text-transform: uppercase;
-          text-align: center;
           margin-top: 10px;
         }
         form{
-          right: 80px;
-          bottom:20px;
-          input{
-            font-size: 15px;
+          position: static;
+            input{
+            font-size: 14px;
             width: 150px;
             height: 30px;
 
@@ -653,6 +771,10 @@
             height: 30px;
           }
         }
+      }
+
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation){
+
       }
      
     }
