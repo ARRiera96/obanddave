@@ -7,12 +7,22 @@
     background-size: cover;
     height: 900px;
     width: 100%;
-    
-    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: portrait){
       background-image: url('daveBioPicMobile.jpg');
       background-attachment: scroll;
       background-size: 100% 100%;
       height: 462px; 
+    }
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: landscape){
+      display: none;
+    }
+  }
+
+  #davePiclandScape{
+    display: none;
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape){
+      display: block;
     }
   }
 
@@ -84,6 +94,11 @@
         padding-top: 0;
         padding-bottom: 30px;
       }
+    }
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape){
+    height: 340px;
+
     }
 
   }

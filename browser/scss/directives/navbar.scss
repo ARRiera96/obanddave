@@ -16,7 +16,7 @@ navbar {
 
 
 
-  .container{
+  .container-fluid{
     width: 91%;
     max-width: 1340px;
     padding-left:0px;
@@ -34,11 +34,19 @@ navbar {
         font-family:  "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
       }
     }
-    .in{
-      width: 390px;
+    .in, .in-add, .in-remove{
+
+      position: absolute;
+      left: 0;
+      width: 100%;
+      margin: 0;
       background-color: white;
       font-weight: 200;
+      padding-bottom: 30px;
       ul{
+      &:first-child a{
+        padding-top:0;
+      }
         a{
           font-weight: 200;
           text-align: center;
@@ -50,8 +58,12 @@ navbar {
         margin: auto;
         left: 0;
       }
+       @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: landscape) {
+       
+       }
+      
     }
-    
+
 
     .socialContainer {
       margin-top: 10px; 
@@ -107,9 +119,14 @@ navbar {
       img{
         margin-top: 2px;
         width: 80%;
-        margin-left: 35px;
+        margin-left: 30px;
       }
     }
+     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: landscape){
+      img{
+        margin-left: 42px;
+      }
+     }
   }
 
   .navbar-toggle {

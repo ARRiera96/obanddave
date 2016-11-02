@@ -1,7 +1,7 @@
 <div class='hello'   ng-show='transitioned'>
 <navbar ></navbar >
 <section  id="home" class='homebruh'>
-    <img id="mainPic1" style="heigth: 100%; width: 100%; " ng-src='js/home/carouselPics/carousel1.jpg' style="margin:auto;" >
+    <img id="mainPic1" style="height: 100%; width: 100%; " ng-src='js/home/carouselPics/carousel1.jpg' style="margin:auto;" >
    <img id="mainPic2" style="height: 100%; width: 100%; " ng-src='testMainPic.jpg' style="margin:auto;" >
 
   <!-- Carousel Markup -->
@@ -16,14 +16,15 @@
           </div>
         </div>
       </div> -->
-
+      <!-- <img src='obDaveBanner.jpg' class='img-responsive' > -->
+      <div id="obDaveBanner"></div>
           
-          <div class='container-fluid ' style="border: 5px solid gray">
+        <!--   <div class='container-fluid ' style="border: 5px solid gray">
               <div class='row'>
              <img src='obDaveBanner.jpg' class='img-responsive' >
-             <!-- <img src='obDaveBanner2.jpg' class='img-responsive'/> -->
+
                </div>
-          </div>
+          </div> -->
           
        
         <div class='banner bioBanner' >
@@ -184,3 +185,5 @@
 <footer ></footer >
 </div>
 <img class='land' src='landing{{random}}.jpg' ng-click='$parent.toggleTransition()' ng-if="!transitioned" />
+<img id="landingMobile" src='landingMobile{{randomMobile}}.jpg' ng-click='$parent.toggleTransition()' ng-if="!transitioned" />
+

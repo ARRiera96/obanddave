@@ -29,6 +29,24 @@
       display: block;
     }
   }
+  #obDaveBanner{
+    background-image: url('obDaveBanner.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 252px;
+    border: 5px solid gray;
+    @media only screen and (min-device-width : 375px) and (max-device-width : 667px){ 
+      height: 75px;
+    }
+    @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
+      height: 130px;
+    }
+    @media only screen and (min-width: 1824px) {
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+    }
+  }
 
 
 
@@ -344,6 +362,17 @@
         }
 
      }
+     /*LARGE DESKTOP*/
+     @media only screen and (min-width: 1824px) {
+       #singlesList{
+         padding-top: 20px;
+       }
+       background-size: cover;
+       .musicArrow{
+        left: 45%;
+        bottom: 20px;
+       }
+     }
 
   }
   /*END OF MOST RECENT SINGLE BANNER*/
@@ -448,6 +477,27 @@
           }
         }
       }
+      /*LARGE DESKTOP*/
+      @media only screen and (min-width: 1824px) {
+        height: 120px;
+        .appleLogo{
+          left: 836px;
+          bottom: 30px;
+          svg{
+            width: 230px;
+          }
+          
+        }
+        .spotifyLogo{
+          left: 700px;
+          bottom: 24px;
+  
+        }
+        .sCloudLogo{
+          right: 680px;
+          bottom: 22px;
+        }
+      }
   }
 
   .musicLinks.ng-hide-add, .musicLinks.ng-hide-remove {
@@ -474,8 +524,8 @@
       width: 100%;
       transition: background-image .6s, opacity 1s;
       @media screen and (min-width : 1824px) {
-        background-size: cover;
-        height: 600px;
+        background-size: contain;
+        height: 576px;
       }
       @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         height: 113px;
@@ -550,6 +600,17 @@
         @media only screen and (min-device-width : 320px) and (max-device-width: 480px) and (orientation : landscape){
             width: 100%;
             height: 300px;
+        }
+
+        /*LARGE DESKTOP*/
+        @media only screen and (min-width: 1824px) {
+          height: 780px;
+          iframe{
+            top: 10%;
+            left: 23%;
+            width: 1022px;
+            height: 560px;
+          }
         }
     }
   
@@ -728,7 +789,7 @@
         bottom: 67px;
         input{
           display: inline;
-          font-size: 16px;
+          font-size: 20px;
           color: gray;
           height: 46px;
           width: 208px;
@@ -737,6 +798,7 @@
 
         button{
           background-color: black;
+          color: white;
           text-transform: uppercase;
           height: 46px;
           margin-left: 0;
@@ -773,9 +835,7 @@
         }
       }
 
-      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation){
-
-      }
+      
      
     }
 
@@ -804,6 +864,9 @@
       width: 100%;
       height: 862px;
     }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait){
+      display: none;
+    }
   transition: opacity linear 1.5s;
 }
 
@@ -821,5 +884,12 @@
 }
 
 
+#landingMobile{
+  display: none;
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait){
+    display: block;
+  }
+
+}
 
 

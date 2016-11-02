@@ -44,6 +44,15 @@ app.controller('HomeController', function($scope,$rootScope, $timeout){
 	};
 	$scope.random= randomImage();
 
+	function randomMobileImage(){
+		var rand= Math.random();
+		if(rand < .5){
+			return "White";
+		}
+		else return "Black"
+	}
+	$scope.randomMobile= randomMobileImage();
+
 
 	$scope.obSpotLight= function(){
 		var bioBanner= angular.element(document.querySelector(".bioBanner"));
