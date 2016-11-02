@@ -17,6 +17,10 @@
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: landscape){
       display: none;
     }
+    @media only screen and (min-width: 1824px) {
+      height: 1000px;
+    }
+
   }
 
   #davePiclandScape{
@@ -99,6 +103,15 @@
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape){
     height: 340px;
 
+    }
+
+    @media only screen and (min-width: 1824px) {
+      font-size: 23px;
+      height: 610px;
+      .block{
+        padding-left: 550px;
+        padding-right: 550px;
+      }
     }
 
   }

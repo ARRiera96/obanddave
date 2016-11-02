@@ -15,7 +15,9 @@
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: landscape){
       display: none;
     }
-
+    @media only screen and (min-width: 1824px) {
+      height: 1000px;
+    }
   }
 
   #obPicLandscape{
@@ -93,6 +95,14 @@
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape){
     height: 350px;
 
+    }
+    @media only screen and (min-width: 1824px) {
+      font-size: 23px;
+      height: 650px;
+      .block{
+        padding-left: 550px;
+        padding-right: 550px;
+      }
     }
 
   }
